@@ -1,30 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "projectType": "saas",
+  "projectName": "The Direction Company",
+  "projectDescription": "An education platform delivering podclass-style courses and tools that help individuals gain clarity, confidence, and direction to achieve lasting personal and professional success.",
   "theme": "almond",
-  "name": "The Direction Company",
-  "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
-  },
-  "favicon": "/favicon.svg",
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@thedirectioncompany.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Get Started",
-      "href": "https://thedirectioncompany.com"
-    }
-  },
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
   "navigation": {
     "tabs": [
       {
@@ -76,9 +57,21 @@
       }
     ]
   },
-  "footer": {
-    "socials": {
-      "linkedin": "https://www.linkedin.com/company/the-direction-company"
-    }
-  }
+  "keyFeatures": [
+    "Podclass-style courses with real-world interviews from peak performers",
+    "Napoleon Hill's 16 success principles applied to modern life",
+    "Progress tracking across lessons and modules",
+    "Community engagement and peer accountability",
+    "Actionable tools for clarity, confidence, and goal-setting",
+    "Mobile-accessible learning experience"
+  ],
+  "publicApiSurface": [
+    "User account registration and login",
+    "Course enrollment and access",
+    "Lesson playback and completion tracking",
+    "Progress dashboard",
+    "Community discussion threads",
+    "Notification and communication preferences",
+    "Billing and subscription management"
+  ]
 }
