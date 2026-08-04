@@ -1,16 +1,16 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
-  "name": "The Direction Company",
+  "theme": "maple",
+  "name": "Luke",
   "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
+    "primary": "#1C1917",
+    "light": "#FAFAF9",
+    "dark": "#57534E"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/assets/favicon.svg",
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/assets/luke-wordmark.svg",
+    "dark": "/assets/luke-wordmark-inverse.svg"
   },
   "navbar": {
     "links": [
@@ -26,59 +26,136 @@
     }
   },
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guide",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "getting-started/create-account",
-              "getting-started/your-first-course"
-            ]
-          },
-          {
-            "group": "Core Concepts",
-            "pages": [
-              "concepts/success-principles",
-              "concepts/podclass-format",
-              "concepts/peak-performers"
-            ]
-          },
-          {
-            "group": "Using the Platform",
-            "pages": [
-              "platform/dashboard",
-              "platform/courses",
-              "platform/progress-tracking",
-              "platform/community"
-            ]
-          },
-          {
-            "group": "Account & Settings",
-            "pages": [
-              "account/profile",
-              "account/notifications",
-              "account/billing"
-            ]
-          },
-          {
-            "group": "Help",
-            "pages": [
-              "help/faq",
-              "help/troubleshooting",
-              "help/contact"
-            ]
-          }
+        "group": "Getting started",
+        "pages": [
+          "index",
+          "getting-started/where-luke-works",
+          "getting-started/current-availability",
+          "getting-started/first-conversation"
+        ]
+      },
+      {
+        "group": "Proactive work",
+        "pages": [
+          "proactive-work/overview"
+        ]
+      },
+      {
+        "group": "Administration through messaging",
+        "pages": [
+          "administration/overview"
+        ]
+      },
+      {
+        "group": "Release notes",
+        "pages": [
+          "release-notes/index"
+        ]
+      },
+      {
+        "group": "Using Luke",
+        "pages": [
+          "using-luke/overview"
+        ]
+      },
+      {
+        "group": "Connections",
+        "pages": [
+          "connections/overview"
+        ]
+      },
+      {
+        "group": "Playbooks",
+        "pages": [
+          "playbooks/overview"
+        ]
+      },
+      {
+        "group": "Decisions and memory",
+        "pages": [
+          "decisions-memory/overview"
+        ]
+      },
+      {
+        "group": "Trust and privacy",
+        "pages": [
+          "trust-privacy/overview"
+        ]
+      },
+      {
+        "group": "Troubleshooting",
+        "pages": [
+          "troubleshooting/overview"
         ]
       }
     ]
   },
   "footer": {
     "socials": {
-      "linkedin": "https://www.linkedin.com/company/the-direction-company"
+      "github": "https://github.com/The-Direction-Company"
+    },
+    "links": [
+      {
+        "header": "Use Luke",
+        "items": [
+          {
+            "label": "Start here",
+            "href": "/"
+          },
+          {
+            "label": "Current availability",
+            "href": "/getting-started/current-availability"
+          },
+          {
+            "label": "Troubleshooting",
+            "href": "/troubleshooting/overview"
+          }
+        ]
+      },
+      {
+        "header": "Trust",
+        "items": [
+          {
+            "label": "Trust and privacy",
+            "href": "/trust-privacy/overview"
+          },
+          {
+            "label": "Release notes",
+            "href": "/release-notes"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "How to use Luke, from The Direction Company, through approved communication channels.",
+  "search": {
+    "prompt": "Search Luke documentation"
+  },
+  "redirects": [
+    {
+      "source": "/introduction",
+      "destination": "/"
+    },
+    {
+      "source": "/quickstart",
+      "destination": "/getting-started/first-conversation"
+    },
+    {
+      "source": "/availability",
+      "destination": "/getting-started/current-availability"
+    },
+    {
+      "source": "/releases",
+      "destination": "/release-notes"
     }
+  ],
+  "contextual": {
+    "options": [
+      "copy",
+      "view"
+    ],
+    "display": "header"
   }
 }
