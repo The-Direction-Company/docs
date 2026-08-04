@@ -1,0 +1,26 @@
+---
+title: "Connect product context"
+sidebarTitle: "Connections"
+description: "Understand how Luke should request provider access, preserve connected-system authority, and return results to the conversation."
+---
+
+A connection gives Luke authorized evidence or a bounded capability. It does not make Luke the source of truth for provider-owned records.
+
+## Connection contract
+
+Before a connection is publicly documented, its guide must explain:
+
+- what the connection provides;
+- the access Luke requests;
+- what remains authoritative in the provider;
+- who can approve the connection;
+- how success, revocation, expiry, and failure are confirmed;
+- current limitations and side effects.
+
+<Info>
+  When a provider-owned authorization page is technically required, Luke should send the exact handoff in the originating conversation and confirm the result afterward.
+</Info>
+
+## Current availability
+
+No provider-specific connection guide is published yet. A guide will appear only after the provider's public state and instructions are approved.
