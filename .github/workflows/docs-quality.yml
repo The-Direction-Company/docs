@@ -1,0 +1,36 @@
+name: Docs quality
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Mint CLI
+        run: npm install --global mint@4.2.748
+      - name: Validate documentation
+        run: mint validate
+      - name: Check links, redirects, anchors, and snippets
+        run: mint broken-links --check-anchors --check-redirects --check-snippets
+      - name: Check accessibility
+        run: mint a11y
+      - name: Enforce the messaging-only product boundary
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -RInE '(Luke dashboard|Luke settings|Luke account|support portal|integration manager|API playground)' --include='*.mdx' .; then
+            echo 'Prohibited customer-surface language found.'
+            exit 1
+          fi
